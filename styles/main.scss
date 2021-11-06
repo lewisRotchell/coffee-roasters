@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@100;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import "base/reset.scss";
+@import "abstracts/variables.scss";
+@import "utilities/utils.scss";
+@import "layout/navigation";
+
+/* set up the body */
+body {
+  font-family: var(--ff-sans);
+  font-size: var(--fs-400);
+  color: hsl(var(--clr-grey-blue));
+  background-color: var(--clr-light-grey);
+  line-height: 1.625;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  overflow-x: hidden;
+}
