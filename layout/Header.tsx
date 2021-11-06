@@ -21,7 +21,7 @@ const navLinks = [
 
 export const Header: React.FC<HeaderProps> = ({}) => {
   return (
-    <header className="primary-header flex">
+    <header className="primary-header flex container">
       <div>
         <Image
           src="/images/shared/desktop/logo.svg"

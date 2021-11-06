@@ -2,14 +2,12 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 3.125em;
+  margin-bottom: 2.68em;
   --gap: 2.06rem;
 
   & li {
     font-weight: 700;
     color: hsl(var(--clr-grey), 1);
     letter-spacing: 0.92px;
-  }
-
-  & li:where(:not(:last-child)) {
   }
 }

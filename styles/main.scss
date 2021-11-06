@@ -5,7 +5,11 @@
 @import "abstracts/variables.scss";
 @import "base/typography.scss";
 @import "utilities/utils.scss";
+@import "layout/container.scss";
 @import "layout/navigation";
+
+// pages
+@import "pages/home.scss";
 
 /* set up the body */
 body {
@@ -15,8 +19,9 @@ body {
   background-color: var(--clr-light-grey);
   line-height: 1.625;
   min-height: 100vh;
+  max-width: 1440px;
+  margin-inline: auto;
+  overflow-x: hidden;
   display: grid;
   grid-template-rows: min-content 1fr;
-  overflow-x: hidden;
-  padding-inline: 5em;
 }

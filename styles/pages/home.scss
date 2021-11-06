@@ -1,0 +1,16 @@
+.home-hero {
+  height: 37.5em;
+  display: grid;
+  background-image: url(/images/home/desktop/image-hero-coffeepress.jpg);
+
+  &__details {
+    margin: auto 0;
+    color: hsl(var(--clr-cream));
+  }
+
+  &__details > p {
+    max-width: 27.8em;
+    margin-block: 2rem 3.5rem;
+    color: hsl(var(--clr-cream), 0.8);
+  }
+}
