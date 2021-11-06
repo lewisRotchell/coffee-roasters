@@ -3,6 +3,7 @@
 
 @import "base/reset.scss";
 @import "abstracts/variables.scss";
+@import "base/typography.scss";
 @import "utilities/utils.scss";
 @import "layout/navigation";
 
@@ -17,4 +18,5 @@ body {
   display: grid;
   grid-template-rows: min-content 1fr;
   overflow-x: hidden;
+  padding-inline: 5em;
 }
