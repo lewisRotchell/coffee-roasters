@@ -27,6 +27,11 @@ const Home: NextPage = () => {
             <Button type={"link"}>Create your plan</Button>
           </div>
         </section>
+        <section className="home-collection">
+          <h2 className="fw-black home-collection__title d-block t-center fs-900 ff-serif">
+            our collection
+          </h2>
+        </section>
       </main>
     </>
   );

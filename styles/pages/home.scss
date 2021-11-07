@@ -14,3 +14,18 @@
     color: hsl(var(--clr-cream), 0.8);
   }
 }
+
+.home-collection {
+  margin-top: 7.5em;
+
+  &__title {
+    background: -webkit-linear-gradient(
+      0.25turn,
+      hsl(var(--clr-cream), 0.1),
+      hsl(var(--clr-grey), 0.4)
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

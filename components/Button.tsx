@@ -9,7 +9,7 @@ export const Button: React.FC<ButtonProps> = ({ children, type }) => {
   if (type === "link") {
     return (
       <Link href="/">
-        <a>{children}</a>
+        <a className="btn fw-black">{children}</a>
       </Link>
     );
   } else return <button>{children}</button>;
