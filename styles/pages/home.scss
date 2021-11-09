@@ -2,7 +2,7 @@
   height: 37.5em;
   display: grid;
   background-image: url(/images/home/desktop/image-hero-coffeepress.jpg);
-
+  background-size: cover;
   &__details {
     margin: auto 0;
     color: hsl(var(--clr-cream));
@@ -28,12 +28,7 @@
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    // position: absolute;
-    // top: 16px;
-    // left: 50%;
-    // transform: translateX(-50%);
-    // display: block;
-    // width: 100%;
+
     transform: translateY(65px);
   }
   &__grid {
@@ -46,5 +41,47 @@
   h3 {
     margin-top: 4.375rem;
     margin-bottom: 1.5rem;
+  }
+}
+
+.why-us {
+  margin-top: 12.5rem;
+  background: linear-gradient(
+    to bottom,
+    hsl(var(--clr-grey-blue)) 0%,
+    hsl(var(--clr-grey-blue)) 78%,
+    var(--clr-light-grey) 78%,
+    var(--clr-light-grey) 100%
+  );
+  color: hsl(var(--clr-cream));
+
+  > h2 {
+    padding-top: 6.25rem;
+  }
+
+  > p {
+    max-width: 33.75rem;
+    margin-inline: auto;
+    margin-bottom: 5.375rem;
+  }
+
+  &__grid {
+    grid-template-columns: repeat(3, 21.875em);
+    column-gap: 1.875em;
+  }
+
+  &__card {
+    background-color: hsl(var(--clr-cyan));
+    color: hsl(var(--clr-cream));
+    padding: 4.5rem 3rem 3rem 3rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    h3 {
+      margin-top: 56px;
+      margin-bottom: 24px;
+    }
   }
 }

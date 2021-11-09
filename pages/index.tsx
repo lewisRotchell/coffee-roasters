@@ -2,7 +2,9 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { Button } from "../components/Button";
 import { CoffeeCollectionCard } from "../components/CoffeeCollectionCard";
+import { WhyUsCards } from "../components/WhyUsCards";
 import { coffeeCollectionData } from "../data/coffeeCollectionData";
+import { whyUsData } from "../data/whyUsData";
 
 const Home: NextPage = () => {
   return (
@@ -39,6 +41,28 @@ const Home: NextPage = () => {
                 title={data.title}
                 image={data.image}
                 description={data.description}
+              />
+            ))}
+          </div>
+        </section>
+        <section className="why-us t-center">
+          <h2 className="fw-black  d-block t-center fs-700 ff-serif">
+            Why choose us?
+          </h2>
+          <p>
+            A large part of our role is choosing which particular coffees will
+            be featured in our range. This means working closely with the best
+            coffee growers to give you a more impactful experience on every
+            level.
+          </p>
+          <div className="grid-container why-us__grid">
+            {whyUsData.map((data, index) => (
+              <WhyUsCards
+                key={index}
+                title={data.title}
+                image={data.image}
+                description={data.description}
+                truck={data.truck}
               />
             ))}
           </div>
