@@ -1,7 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import { Button } from "../components/Button";
+import { CoffeeCollectionCard } from "../components/CoffeeCollectionCard";
+import { coffeeCollectionData } from "../data/coffeeCollectionData";
 
 const Home: NextPage = () => {
   return (
@@ -31,6 +32,16 @@ const Home: NextPage = () => {
           <h2 className="fw-black home-collection__title d-block t-center fs-900 ff-serif">
             our collection
           </h2>
+          <div className="grid-container home-collection__grid">
+            {coffeeCollectionData.map((data, index) => (
+              <CoffeeCollectionCard
+                key={index}
+                title={data.title}
+                image={data.image}
+                description={data.description}
+              />
+            ))}
+          </div>
         </section>
       </main>
     </>

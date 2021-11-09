@@ -16,6 +16,7 @@
 }
 
 .home-collection {
+  position: relative;
   margin-top: 7.5em;
 
   &__title {
@@ -27,5 +28,23 @@
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    // position: absolute;
+    // top: 16px;
+    // left: 50%;
+    // transform: translateX(-50%);
+    // display: block;
+    // width: 100%;
+    transform: translateY(65px);
+  }
+  &__grid {
+    grid-template-columns: repeat(4, 255px);
+    column-gap: 1.75em;
+  }
+}
+
+.coffee-collection-card {
+  h3 {
+    margin-top: 4.375rem;
+    margin-bottom: 1.5rem;
   }
 }
