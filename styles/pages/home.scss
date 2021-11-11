@@ -33,7 +33,10 @@
   }
   &__grid {
     grid-template-columns: repeat(4, 255px);
-    column-gap: 1.75em;
+    column-gap: 2%;
+    @media (min-width: 91em) {
+      column-gap: 4%;
+    }
   }
 }
 
@@ -46,6 +49,7 @@
 
 .why-us {
   margin-top: 12.5rem;
+
   background: linear-gradient(
     to bottom,
     hsl(var(--clr-grey-blue)) 0%,
@@ -66,8 +70,10 @@
   }
 
   &__grid {
-    grid-template-columns: repeat(3, 21.875em);
-    column-gap: 1.875em;
+    max-width: 1500px;
+    margin-inline: auto;
+    grid-template-columns: repeat(3, 21.875rem);
+    justify-content: space-between;
   }
 
   &__card {
@@ -83,5 +89,26 @@
       margin-top: 56px;
       margin-bottom: 24px;
     }
+  }
+}
+
+.how-it-works {
+  margin-top: 12.5rem;
+  max-width: 1500px;
+  margin-inline: auto;
+  &__grid {
+    text-align: left;
+    grid-template-columns: repeat(3, 21.875rem);
+
+    justify-content: space-between;
+  }
+
+  h2 {
+    color: hsl(var(--clr-grey));
+    margin-bottom: 2.5rem;
+  }
+
+  p {
+    max-width: 82%;
   }
 }

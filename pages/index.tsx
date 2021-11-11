@@ -2,8 +2,10 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { Button } from "../components/Button";
 import { CoffeeCollectionCard } from "../components/CoffeeCollectionCard";
+import { HowItWorksCard } from "../components/HowItWorksCards";
 import { WhyUsCards } from "../components/WhyUsCards";
 import { coffeeCollectionData } from "../data/coffeeCollectionData";
+import { howItWorksData } from "../data/how-it-works-data";
 import { whyUsData } from "../data/whyUsData";
 
 const Home: NextPage = () => {
@@ -45,7 +47,7 @@ const Home: NextPage = () => {
             ))}
           </div>
         </section>
-        <section className="why-us t-center">
+        <section className="why-us t-center  ">
           <h2 className="fw-black  d-block t-center fs-700 ff-serif">
             Why choose us?
           </h2>
@@ -55,7 +57,7 @@ const Home: NextPage = () => {
             coffee growers to give you a more impactful experience on every
             level.
           </p>
-          <div className="grid-container why-us__grid">
+          <div className="grid-container why-us__grid inner-container ">
             {whyUsData.map((data, index) => (
               <WhyUsCards
                 key={index}
@@ -63,6 +65,19 @@ const Home: NextPage = () => {
                 image={data.image}
                 description={data.description}
                 truck={data.truck}
+              />
+            ))}
+          </div>
+        </section>
+        <section className="how-it-works inner-container ">
+          <h2 className="ff-serif fw-black fs-500">How it works</h2>
+          <div className="grid-container how-it-works__grid ">
+            {howItWorksData.map((data, index) => (
+              <HowItWorksCard
+                key={index}
+                number={data.number}
+                title={data.title}
+                description={data.description}
               />
             ))}
           </div>
