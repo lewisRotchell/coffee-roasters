@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { Button } from "../components/Button";
 import { CoffeeCollectionCard } from "../components/CoffeeCollectionCard";
-import { HowItWorksCard } from "../components/HowItWorksCards";
+import { TimeLine } from "../components/TimeLine";
 import { WhyUsCards } from "../components/WhyUsCards";
 import { coffeeCollectionData } from "../data/coffeeCollectionData";
 import { howItWorksData } from "../data/how-it-works-data";
@@ -71,16 +71,7 @@ const Home: NextPage = () => {
         </section>
         <section className="how-it-works inner-container ">
           <h2 className="ff-serif fw-black fs-500">How it works</h2>
-          <div className="grid-container how-it-works__grid ">
-            {howItWorksData.map((data, index) => (
-              <HowItWorksCard
-                key={index}
-                number={data.number}
-                title={data.title}
-                description={data.description}
-              />
-            ))}
-          </div>
+          <TimeLine />
         </section>
       </main>
     </>

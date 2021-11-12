@@ -32,7 +32,7 @@
     transform: translateY(65px);
   }
   &__grid {
-    grid-template-columns: repeat(4, 255px);
+    grid-template-columns: repeat(auto-fit, 255px);
     column-gap: 2%;
     @media (min-width: 91em) {
       column-gap: 4%;
@@ -72,7 +72,7 @@
   &__grid {
     max-width: 1500px;
     margin-inline: auto;
-    grid-template-columns: repeat(3, 21.875rem);
+    grid-template-columns: repeat(auto-fill, 21.875rem);
     justify-content: space-between;
   }
 
@@ -94,21 +94,9 @@
 
 .how-it-works {
   margin-top: 12.5rem;
-  max-width: 1500px;
-  margin-inline: auto;
-  &__grid {
-    text-align: left;
-    grid-template-columns: repeat(3, 21.875rem);
-
-    justify-content: space-between;
-  }
 
   h2 {
     color: hsl(var(--clr-grey));
     margin-bottom: 2.5rem;
-  }
-
-  p {
-    max-width: 82%;
   }
 }

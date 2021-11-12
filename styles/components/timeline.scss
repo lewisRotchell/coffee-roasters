@@ -1,0 +1,37 @@
+.timeline {
+  &__grid {
+    text-align: left;
+    // grid-template-columns: repeat(3, 21.875rem);
+
+    // justify-content: space-between;
+    position: relative;
+    display: flex;
+
+    p {
+      max-width: 82%;
+    }
+  }
+
+  &__card {
+    padding: 0.8rem;
+  }
+  &__card:nth-child(1) {
+    color: red;
+
+    padding-left: 0;
+  }
+  &__card:nth-child(2) {
+    color: blue;
+  }
+  &__card:nth-child(3) {
+    color: red;
+  }
+}
+
+.line {
+  width: 70%;
+  height: 1.5rem;
+  display: block;
+  background-color: #000;
+  margin-right: -0.8rem;
+}
