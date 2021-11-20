@@ -4,7 +4,7 @@
   background-image: url(/images/home/desktop/image-hero-coffeepress.jpg);
   background-size: cover;
   &__details {
-    margin: auto 0;
+    margin: auto auto;
     color: hsl(var(--clr-cream));
   }
 
@@ -70,9 +70,9 @@
   }
 
   &__grid {
-    max-width: 1500px;
+    max-width: 1200px;
     margin-inline: auto;
-    grid-template-columns: repeat(auto-fill, 21.875rem);
+    grid-template-columns: repeat(auto-fit, 21.875rem);
     justify-content: space-between;
   }
 

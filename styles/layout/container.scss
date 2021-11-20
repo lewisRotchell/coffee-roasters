@@ -1,7 +1,10 @@
 .container {
-  padding-inline: 5em;
+  // padding-inline: 5em;
 }
 
 .inner-container {
-  padding-inline: 5.312em;
+  // padding-inline: 5.312em;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
 }
