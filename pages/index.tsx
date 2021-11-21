@@ -32,11 +32,11 @@ const Home: NextPage = () => {
             <Button type={"link"}>Create your plan</Button>
           </div>
         </section>
-        <section className="home-collection">
-          <h2 className="fw-black home-collection__title d-block t-center fs-900 ff-serif">
+        <section className="home-collection inner-container">
+          <h2 className="fw-black home-collection__title d-block t-center text-giant ff-serif">
             our collection
           </h2>
-          <div className="grid-container home-collection__grid">
+          <div className=" home-collection__grid">
             {coffeeCollectionData.map((data, index) => (
               <CoffeeCollectionCard
                 key={index}

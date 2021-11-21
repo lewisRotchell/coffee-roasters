@@ -16,8 +16,11 @@ export const CoffeeCollectionCard: React.FC<CoffeeCollectionCardProps> = ({
   return (
     <article className="coffee-collection-card">
       <Image src={image} width={255} height={193} alt={title}></Image>
-      <h3 className={"fw-black fs-500 ff-serif"}>{title}</h3>
-      <p>{description}</p>
+
+      <div>
+        <h3 className={"fw-black fs-500 ff-serif"}>{title}</h3>
+        <p>{description}</p>
+      </div>
     </article>
   );
 };

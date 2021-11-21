@@ -50,3 +50,15 @@
 .letter-spacing-3 {
   letter-spacing: 2.35px;
 }
+
+.text-giant {
+  font-size: clamp(3rem, 11vw, 7rem);
+  @media (min-width: 1440px) {
+    font-size: var(--fs-900);
+    line-height: 1.1;
+  }
+}
+
+.example-text {
+  font-size: clamp(3rem, 10vw, 7rem);
+}

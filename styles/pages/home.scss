@@ -28,22 +28,32 @@
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
     transform: translateY(65px);
   }
   &__grid {
-    grid-template-columns: repeat(auto-fit, 255px);
-    column-gap: 2%;
-    @media (min-width: 91em) {
-      column-gap: 4%;
+    display: grid;
+    @media (min-width: 90em) {
+      grid-template-columns: repeat(auto-fit, 255px);
+      justify-content: space-between;
     }
   }
 }
 
 .coffee-collection-card {
-  h3 {
-    margin-top: 4.375rem;
-    margin-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: minmax(200px, 255px) 282px;
+  justify-content: space-around;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+
+  @media (min-width: 90em) {
+    grid-template-columns: minmax(200px, 255px);
+    text-align: center;
+    h3 {
+      margin-top: 4.2rem;
+      margin-bottom: 1.5rem;
+    }
   }
 }
 
